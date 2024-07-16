@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary-gray: #424247;
+  --primary-orange: #ff5400;
+  --primary-black: #131318;
+}
+
+/* all */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+/* sheared */
+
+.flex {
+  display: flex;
+}
+.orange-override {
+  color: var(--primary-orange);
+}
+.clicked-bold {
+  font-weight: 700;
+}
+nav,
+main {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* header */
+/* nav */
+.navbar {
+  margin: 50px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-left {
+  align-items: center;
+  gap: 16px;
+}
+.brand-logo {
+  height: 48px;
+}
+.brand {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.nav-links {
+  list-style: none;
+  gap: 44px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-gray);
+  font-size: 1.125rem;
+}
+.burger-menu {
+  display: none;
+}
+/* Device responsive styles */
+
+@media screen and (max-width: 576px) {
+  /* nav */
+  .nav-links {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .burger-menu>img{
+    height: 22px;
+  }
+
+  .navbar {
+    margin: 20px;
+  }
+  .nav-left {
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-logo {
+    height: 28px;
+  }
+  .brand {
+    font-size: 1.34rem;
+    font-weight: 800;
+  }
+  .nav-links {
+    list-style: none;
+    gap: 44px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--primary-gray);
+    font-size: 1.125rem;
+  }
+}
