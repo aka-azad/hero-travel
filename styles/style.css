@@ -14,7 +14,11 @@
 }
 
 /* sheared */
-
+.btn-semibold {
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary-orange);
+}
 .flex {
   display: flex;
 }
@@ -67,7 +71,7 @@ main {
   width: 1170px;
   height: 500px;
   border-radius: 16px;
-/* padding: 106px; */
+  padding: 106px 185px;
   background: linear-gradient(
       180deg,
       rgba(19, 19, 24, 0.8),
@@ -78,18 +82,48 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.box{
-    height: 250px;
-    width: 250px;
-    border: 2px solid red ;
-}
 .travel-explore-container {
-    display: inline-block;
+  /* display: inline-block; */
   max-width: 800px;
   max-height: 288px;
-  margin: 106px auto;
+  text-align: center;
+  /* margin: 106px auto; */
+}
+.explore-text {
+  max-width: 676px;
+  max-height: 156px;
+  margin: 0 auto;
 }
 
+.travel-explore-title {
+  color: #ffff;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+.travel-explore-description {
+  color: #ffff;
+}
+
+.explore-form {
+  margin-top: 48px;
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.explore-form > * {
+  padding: 14px 34px;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+}
+.margin-r-5px {
+  margin-right: 8px;
+}
 /* Device responsive styles */
 
 @media screen and (max-width: 576px) {

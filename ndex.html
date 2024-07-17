@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Hero Travel</title>
   </head>
   <body>
@@ -50,10 +54,20 @@
               phasellus.
             </p>
           </div>
-          <form action="" class="explore-form"></form>
+          <form action="" class="explore-form">
+            <input type="text" name="place" id="place" placeholder="Where To" />
+            <select name="calender" id="calender" title="date">
+              <option value="">When</option>
+            </select>
+            <select name="Transport" id="Transport" title="date">
+              <option value="">Select Type</option>
+            </select>
+            <button class="btn-semibold" type="submit">
+              <i class="fa fa-search margin-r-8px"></i> Find Now
+            </button>
+          </form>
         </div>
       </section>
-      <div class="box"></div>
     </main>
     <footer></footer>
   </body>
